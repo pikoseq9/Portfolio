@@ -104,6 +104,7 @@ body {
   justify-content: space-between;
   background-color: var(--card);
   padding: 1rem;
+  height: 15rem;
   border-radius: 0.2rem;
   color: var(--text-body);
   box-shadow: var(--shadow);
@@ -134,10 +135,14 @@ body {
   max-height: fit-content;
   box-shadow: var(--shadow);
   background: linear-gradient(135deg, #24292e, #0366d6);
+  background-size: 200%;
+  background-position: left;
   color: white;
+  transition: all 0.1s;
 }
 
 .github-button:hover {
-  opacity: 0.85;
+  transform: scale(1.02);
+  background-position: right;
   cursor: pointer;
 }
