@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -65,7 +65,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: inline;
   display: flex;
   gap: 1rem;
 }
@@ -138,11 +137,55 @@ body {
   background-size: 200%;
   background-position: left;
   color: white;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 
 .github-button:hover {
   transform: scale(1.02);
   background-position: right;
   cursor: pointer;
+}
+
+.about-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: var(--card);
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 5rem 0 0 0;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.profile-card-head {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile-card img {
+  height: 15rem;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.profile-card-links {
+  display: flex;
+  gap: 2rem;
+  font-size: larger;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.profile-card a {
+  color: inherit;
 }

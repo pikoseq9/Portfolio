@@ -1,3 +1,9 @@
+import ProfileCard from "../components/ProfileCard";
+
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <div className="about-body">
+      <ProfileCard />
+    </div>
+  );
 }
