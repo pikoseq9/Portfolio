@@ -60,14 +60,11 @@ body {
 }
 
 .nav {
-  background-color: var(--navbar);
   color: var(--text-heading);
   display: flex;
   justify-content: space-between;
   z-index: 2;
-  position: sticky;
-  top: 0;
-  box-shadow: var(--shadow);
+  margin: 1rem 5rem 0 1rem;
 }
 
 .nav ul {
@@ -85,6 +82,29 @@ body {
   display: flex;
   align-items: center;
   padding: 0.25rem;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.darkside-toggle {
+  transform: scale(2);
+  padding: 0;
+  color: var(--button-secondary);
+}
+
+.language-switch {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--button-secondary);
+  color: #333;
+  transition: all 0.2s ease;
 }
 
 .footer {
@@ -166,7 +186,6 @@ body {
   padding: 2rem;
   width: 100%;
   max-width: 600px;
-  margin: 2rem 0 0 0;
   border-radius: 1rem;
   box-shadow: var(--shadow);
 }

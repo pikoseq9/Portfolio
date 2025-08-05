@@ -9,10 +9,10 @@ export default function Navbar() {
       <Link to="/" className="site-title">
         Portfolio
       </Link>
-      <ul>
-        <li><LangDropList /></li>
-        <li><ThemeToggler /></li>
-      </ul>
+      <div className="right-nav">
+        <LangDropList />
+        <ThemeToggler />
+      </div>
     </nav>
   );
 }
