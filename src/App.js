@@ -7,29 +7,35 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ParticleBackground from "./components/ParticleBackground";
 import { ProjectsProvider } from "./Context/ProjectsProvider";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/projects"
-            element={
-              <ProjectsProvider>
-                <Projects />
-              </ProjectsProvider>
-            }
-          />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <div className="app-container">
+        <ParticleBackground />
+        <div className="app-content">
+          <Navbar />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route
+                path="/projects"
+                element={
+                  <ProjectsProvider>
+                    <Projects />
+                  </ProjectsProvider>
+                }
+              />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </div>
   );
 }

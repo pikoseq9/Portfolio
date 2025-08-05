@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import HobbyCard from "./HobbyCard";
 
-export default function ProfileCard() {
+export default function ProfileCard({ profile }) {
   const [age, setAge] = useState(0);
-  const profile = {
-    name: "Patryk",
-    surname: "W",
-    dateOfBirth: new Date("2004-11-22"),
-    image: "/images/profile.png",
-    school:
-      "Silesian University of Technology - Computer Sciense at the Faculty of Applied Mathematics",
-    hobbies: ["Playing Guitar", "Coding", "Playing Computer Games", "Work out"],
-    links: [
-      "https://github.com/pikoseq9",
-      "https://www.linkedin.com/in/patryk-weklicz-300925363/",
-      "https://www.facebook.com/profile.php?id=100015240125732&locale=pl_PL",
-    ],
-  };
 
   const getSocialIcon = (url) => {
     if (url.includes("github.com")) return <FaGithub />;
     if (url.includes("linkedin.com")) return <FaLinkedin />;
     if (url.includes("facebook.com")) return <FaFacebook />;
     return null;
+  };
+
+  const getEmojiForHobby = (hobby) => {
+    switch (hobby) {
+      case "Playing Guitar":
+        return "🎸";
+      case "Programming":
+        return "💻";
+      case "Playing Computer Games":
+        return "🎮";
+      case "Working out":
+        return "⚽";
+      default:
+        return "⭐";
+    }
   };
 
   useEffect(() => {
@@ -56,8 +58,24 @@ export default function ProfileCard() {
           </li>
         ))}
       </ul>
-
-      <p>Still studying: {profile.school}</p>
+      <p>
+        Still studying at {profile.school}. Currently exploring frontend
+        development with React, but I’ve also built projects ranging from a
+        desktop school management system to Bash scripts for setting up a TFTP
+        server to boot a Ubuntu ISO. I’m familiar with technologies such as
+        JavaScript, C#, C++, Python, and SQL. Currently, I’m aspiring to secure
+        a frontend developer internship to further grow as a software developer.
+      </p>
+      <h2>Hobbies</h2>
+      <div className="hobby-container">
+        {profile.hobbies.map((hobby) => (
+          <HobbyCard
+            key={hobby}
+            hobby={hobby}
+            emoji={getEmojiForHobby(hobby)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

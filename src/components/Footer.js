@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <p>{year} Portfolio - Patryk W</p>
+      <p>{year} &#169; Portfolio - Patryk W</p>
     </footer>
   );
 }

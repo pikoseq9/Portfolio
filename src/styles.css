@@ -51,11 +51,20 @@ body {
   font-size: 2rem;
 }
 
+.app-container {
+  position: relative;
+}
+
+.app-content {
+  position: relative;
+}
+
 .nav {
   background-color: var(--navbar);
   color: var(--text-heading);
   display: flex;
   justify-content: space-between;
+  z-index: 2;
   position: sticky;
   top: 0;
   box-shadow: var(--shadow);
@@ -154,10 +163,10 @@ body {
 
 .profile-card {
   background-color: var(--card);
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
   max-width: 600px;
-  margin: 5rem 0 0 0;
+  margin: 2rem 0 0 0;
   border-radius: 1rem;
   box-shadow: var(--shadow);
 }
@@ -168,6 +177,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  opacity: 0.95;
 }
 
 .profile-card img {
@@ -187,5 +197,26 @@ body {
 }
 
 .profile-card a {
-  color: inherit;
+  color: var(--accent);
+}
+
+.hobby-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.hobby-content {
+  text-align: center;
+  background-color: var(--tile);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.hobby-content h2 {
+  margin: 0;
+}
+
+.hobby-content h1 {
+  margin: 0;
 }
