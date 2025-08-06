@@ -103,7 +103,7 @@ body {
   border-radius: 0.5rem;
   border: none;
   background: var(--button-secondary);
-  color: #333;
+  color: var(--text-body);
   transition: all 0.2s ease;
 }
 
@@ -178,7 +178,8 @@ body {
 .about-body {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  height: calc(100vh - 10rem) ;
 }
 
 .profile-card {
@@ -239,3 +240,4 @@ body {
 .hobby-content h1 {
   margin: 0;
 }
+

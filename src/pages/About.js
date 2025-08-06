@@ -1,3 +1,4 @@
+import LinkCard from "../components/LinkCard";
 import ProfileCard from "../components/ProfileCard";
 
 export default function About() {
@@ -26,9 +27,21 @@ export default function About() {
     ],
   };
 
+  const links = {
+    Contact: "/contact",
+    Projects: "/projects",
+  }
+
   return (
     <div className="about-body">
       <ProfileCard profile={profile} />
+      <div className="link-card-container">
+        {
+          Object.entries(links).map(([page, to]) => (
+            <LinkCard to={to} page={page}/>
+          ))
+        }
+      </div>
     </div>
   );
 }

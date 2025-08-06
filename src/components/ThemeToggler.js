@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "@theme-toggles/react/css/DarkSide.css";
 import { DarkSide } from "@theme-toggles/react";
 
 export default function ThemeToggler() {
   const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme])
 
   const toggleTheme = () => {
     if (theme === "light") {
