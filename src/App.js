@@ -1,7 +1,6 @@
 import "./styles.css";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -19,7 +18,7 @@ function App() {
           <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<About />} />
               <Route
                 path="/projects"
                 element={
@@ -29,7 +28,6 @@ function App() {
                 }
               />
               <Route path="/blog" element={<Blog />} />
-              <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>

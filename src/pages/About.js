@@ -28,19 +28,18 @@ export default function About() {
   };
 
   const links = {
-    Contact: "/contact",
     Projects: "/projects",
-  }
+    Contact: "/contact",
+    Blog: "/blog",
+  };
 
   return (
     <div className="about-body">
       <ProfileCard profile={profile} />
       <div className="link-card-container">
-        {
-          Object.entries(links).map(([page, to]) => (
-            <LinkCard to={to} page={page}/>
-          ))
-        }
+        {Object.entries(links).map(([page, to]) => (
+          <LinkCard to={to} page={page} />
+        ))}
       </div>
     </div>
   );

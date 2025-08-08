@@ -92,7 +92,7 @@ body {
 }
 
 .darkside-toggle {
-  transform: scale(2);
+  transform: scale(2.5);
   padding: 0;
   color: var(--button-secondary);
 }
@@ -177,9 +177,9 @@ body {
 
 .about-body {
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: calc(100vh - 10rem) ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .profile-card {
@@ -241,3 +241,25 @@ body {
   margin: 0;
 }
 
+.link-card-container {
+  display: grid;
+  grid-auto-rows: 1fr;
+  width: 100%;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.link-card {
+  flex: 1;
+  background-color: var(--card);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+.link-card h1 {
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  color: var(--accent);
+}
