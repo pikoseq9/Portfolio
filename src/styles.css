@@ -241,3 +241,26 @@ body {
   margin: 0;
 }
 
+.contact-container {
+  height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.contact-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+

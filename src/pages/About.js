@@ -37,8 +37,8 @@ export default function About() {
       <ProfileCard profile={profile} />
       <div className="link-card-container">
         {
-          Object.entries(links).map(([page, to]) => (
-            <LinkCard to={to} page={page}/>
+          Object.entries(links).map((to) => (
+            <LinkCard to={to}/>
           ))
         }
       </div>
