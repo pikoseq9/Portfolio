@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext} from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function LangDropList() {
-  const [language, setLanguages] = useState("English");
+  const { setLanguage, language } = useContext(LanguageContext);
 
-  const languages = ["Polish", "English", "German"];
+  const languages = ["Polish", "English"];
 
-  const handleChange = (e) => {
-    setLanguages(e.target.value.toString());
-    console.log({ language });
+  const handleSelect = (e) => {
+    const newLang = e.target.value;
+    setLanguage(newLang);
   };
 
   return (
     <select
       name="language-switch"
       className="language-switch"
-      onChange={handleChange}
+      onChange={handleSelect}
     >
       {languages.map((lang) => (
-        <option value={lang.toLowerCase()}>{lang}</option>
+        <option key={lang} value={lang.toLowerCase()}>{lang}</option>
       ))}
     </select>
   );
