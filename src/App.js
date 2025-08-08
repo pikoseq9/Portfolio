@@ -9,10 +9,16 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ParticleBackground from "./components/ParticleBackground";
 import { ProjectsProvider } from "./Context/ProjectsProvider";
+import { useContext } from "react";
+import { LanguageContext } from "./Context/LanguageContext";
 
 function App() {
+
+  const { language } = useContext(LanguageContext);
+  
   return (
     <div className="App">
+      
       <div className="app-container">
         <ParticleBackground />
         <div className="app-content">
