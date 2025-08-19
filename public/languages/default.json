@@ -1,0 +1,26 @@
+{
+    "languages": {
+        "polish": "",
+        "english": ""
+    },
+
+    "profile_card": {
+        "age": "",
+        "bio": "",
+        "hobby1": "",
+        "hobby2": "",
+        "hobby3": "",
+        "hobby4": ""
+    },
+
+    "projects_page": {
+        "loading": "",
+        "repository": ""
+    },
+
+    "contact_page": {
+        "header": "",
+        "description1": "",
+        "description2": ""
+    }
+}
