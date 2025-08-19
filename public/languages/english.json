@@ -7,6 +7,7 @@
     "profile_card": {
         "age": "Age",
         "bio": "Still studying at Silesian University of Technology - Computer Sciense at the Faculty of Applied Mathematics. Currently exploring frontend development with React, but I’ve also built projects ranging from a desktop school management system to Bash scripts for setting up a TFTP server to boot a Ubuntu ISO. I’m familiar with technologies such as JavaScript, C#, C++, Python, and SQL. Currently, I’m aspiring to secure a frontend developer internship to further grow as a software developer.",
+        "hobbies": "Hobbies",
         "hobby1": "Playing Guitar",
         "hobby2": "Programming",
         "hobby3": "Playing Computer Games",
@@ -20,7 +21,17 @@
 
     "contact_page": {
         "header": "Contact me",
-        "description1": "Email me at: ",
-        "description2": "Find me on LinkedIn, link is put in the <b>About me</b> section"
+        "Email": {
+            "description": "Email me at: wekpat@wp.pl"
+        },
+        "LinkedIn": {
+            "description": "Find me on LinkedIn, link is put in the <b>About me</b> section."
+        }
+    },
+    
+    "links": {
+        "projects": "Projects",
+        "contact": "Contact",
+        "blog": "Blog"
     }
 }

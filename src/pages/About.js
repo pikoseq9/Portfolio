@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import LinkCard from "../components/LinkCard";
 import ProfileCard from "../components/ProfileCard";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function About() {
+  const { languageData } = useContext(LanguageContext);
   const profile = {
     name: "Patryk",
     surname: "W",
@@ -27,18 +30,18 @@ export default function About() {
     ],
   };
 
-  const links = {
-    Projects: "/projects",
-    Contact: "/contact",
-    Blog: "/blog",
+  const routes = {
+    projects: "/projects",
+    contact: "/contact",
+    blog: "/blog",
   };
 
   return (
     <div className="about-body">
       <ProfileCard profile={profile} />
       <div className="link-card-container">
-        {Object.entries(links).map(([page, to]) => (
-          <LinkCard to={to} page={page} />
+        {Object.entries(routes).map(([key, to]) => (
+          <LinkCard key={key} to={to} page={languageData.links?.[key]} />
         ))}
       </div>
     </div>
