@@ -26,9 +26,9 @@ export default function About() {
   };
 
   const links = {
-    Projects: "/projects",
-    Contact: "/contact",
-    Courses: "/courses",
+    [languageData.links.projects]: "/projects",
+    [languageData.links.contact]: "/contact",
+    [languageData.links.courses]: "/courses",
   };
 
   return (

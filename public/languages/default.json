@@ -1,26 +1,35 @@
 {
-    "languages": {
-        "polish": "",
-        "english": ""
-    },
+  "languages": {
+    "polish": "Polish",
+    "english": "English"
+  },
 
-    "profile_card": {
-        "age": "",
-        "bio": "",
-        "hobby1": "",
-        "hobby2": "",
-        "hobby3": "",
-        "hobby4": ""
-    },
+  "profile_card": {
+    "age": "Age",
+    "bio": "Still studying at Silesian University of Technology - Computer Sciense at the Faculty of Applied Mathematics. Currently exploring frontend development with React, but I’ve also built projects ranging from a desktop school management system to Bash scripts for setting up a TFTP server to boot a Ubuntu ISO. I’m familiar with technologies such as JavaScript, C#, C++, Python, and SQL. Currently, I’m aspiring to secure a frontend developer internship to further grow as a software developer.",
+    "hobbies": "Hobbies",
+    "hobby1": "Playing Guitar",
+    "hobby2": "Programming",
+    "hobby3": "Playing Computer Games",
+    "hobby4": "Working out"
+  },
 
-    "projects_page": {
-        "loading": "",
-        "repository": ""
-    },
+  "projects_page": {
+    "loading": "Loading projects",
+    "repository": "Github repository"
+  },
 
-    "contact_page": {
-        "header": "",
-        "description1": "",
-        "description2": ""
-    }
+  "contact_page": {
+    "header": "Contact me",
+    "email": "Email me at: wekpat@wp.pl",
+    "linkedin": "Find me on LinkedIn, link is put in the <b>About me</b> section."
+  },
+
+  "course_header": "All my ended courses",
+
+  "links": {
+    "projects": "Projects",
+    "contact": "Contact",
+    "courses": "Kursy"
+  }
 }

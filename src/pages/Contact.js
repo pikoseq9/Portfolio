@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import ContactCard from "../components/ContactCard";
 import { LanguageContext } from "../Context/LanguageContext";
 
 export default function Contact() {
+  const { languageData } = useContext(LanguageContext);
+
   const contactType = {
     Email: {
-      label: "Email me at:",
+      label: languageData.contact_page.email,
       value: "wekpat@wp.pl",
     },
     LinkedIn: {
-      label: "Find me on LinkedIn, link is put in the About section",
+      label: languageData.contact_page.linkedin,
       value: "",
     },
   };
@@ -17,7 +19,7 @@ export default function Contact() {
   return (
     <div>
       <div className="contact-container">
-        <h1>Contact me</h1>
+        <h1>{languageData.contact_page.header}</h1>
         <div className="contact-list">
           {Object.entries(contactType).map(([name, { label, value }]) => (
             <ContactCard key={name} name={name} label={label} value={value} />
