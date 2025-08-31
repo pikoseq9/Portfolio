@@ -15,8 +15,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 90vh;
-  
 }
 
 :root {
@@ -181,6 +179,7 @@ body {
 
 .about-body {
   display: flex;
+  height: 90vh;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
