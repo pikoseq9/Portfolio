@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_3" data-name="Warstwa 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1036.49 873.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #07c;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #f8f9fa;
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        stroke: #07c;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-6 {
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-1);
+        stroke-width: 10px;
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-2);
+      }
+    </style>
+    <filter id="drop-shadow-1" x="109" y="115.73" width="822" height="459" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="8"/>
+      <feFlood flood-color="#073e59" flood-opacity=".49"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" x="352" y="519.73" width="336" height="121" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur-2" stdDeviation="8"/>
+      <feFlood flood-color="#073e59" flood-opacity=".49"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" x="150" y="609.73" width="739" height="133" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur-3" stdDeviation="8"/>
+      <feFlood flood-color="#073e59" flood-opacity=".49"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" x="195" y="200.73" width="667" height="286" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur-4" stdDeviation="8"/>
+      <feFlood flood-color="#094468" flood-opacity=".49"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-4" x="79.27" width="873.46" height="873.46"/>
+  <rect class="cls-5" x="131.9" y="137.77" width="762.25" height="400.85" rx="36.04" ry="36.04"/>
+  <path class="cls-6" d="M639.08,606.66c-30.26-9.3-74.67-19.3-128.88-18.94-51.46.34-93.79,9.89-123.23,18.94,14.81-5.21,24.49-19.43,23.8-34.72-.63-14.2-10.09-26.77-23.8-31.56h252.11c-13.81,4.85-23.24,17.68-23.67,32.09-.45,15.15,9.14,29.07,23.67,34.19Z"/>
+  <polygon class="cls-3" points="798.64 708.42 173.96 708.42 245.04 630.07 852.08 632.15 798.64 708.42"/>
+  <g class="cls-2">
+    <path class="cls-1" d="M403.4,218.19c25.38,0,46.14,20.76,46.14,45.81v63.94c0,25.05-20.76,45.81-46.14,45.81l-146.66.33-.99-.33v81.4h-43.5v-236.96h191.15ZM405.7,264c0-1.32-.99-2.31-2.31-2.31h-145.34c-1.32,0-2.31.99-2.31,2.31v63.94c0,1.32.99,2.31,2.31,2.31h145.34c1.32,0,2.31-.99,2.31-2.31v-63.94Z"/>
+    <path class="cls-1" d="M830.19,217.86l-86.35,237.29h-34.28l-61.63-168.41c-20.1,55.37-41.86,113.37-61.63,168.41h-33.95l-86.35-237.29h46.14l57.35,156.55,57.35-156.55h42.52l57.35,156.55,57.35-156.55h46.14Z"/>
+  </g>
+</svg>

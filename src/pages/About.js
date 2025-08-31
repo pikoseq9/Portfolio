@@ -15,11 +15,6 @@ export default function About() {
       "Playing Computer Games",
       "Working out",
     ],
-    courses: [
-      "React 18 Course 2025 - Learn React JS the fast way",
-      "Vue - The Complete Guide (incl. Router & Composition API)",
-      "OPEN A2 - Kurs do uprawnień A2",
-    ],
     links: [
       "https://github.com/pikoseq9",
       "https://www.linkedin.com/in/patryk-weklicz-300925363/",
@@ -30,7 +25,7 @@ export default function About() {
   const links = {
     Projects: "/projects",
     Contact: "/contact",
-    Blog: "/blog",
+    Courses: "/courses",
   };
 
   return (
@@ -38,7 +33,7 @@ export default function About() {
       <ProfileCard profile={profile} />
       <div className="link-card-container">
         {Object.entries(links).map(([page, to]) => (
-          <LinkCard to={to} page={page} />
+          <LinkCard key={to} to={to} page={page} />
         ))}
       </div>
     </div>

@@ -1,7 +1,7 @@
 import "./styles.css";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
-import Blog from "./pages/Blog";
+import Courses from "./pages/Courses";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -12,12 +12,10 @@ import { useContext } from "react";
 import { LanguageContext } from "./Context/LanguageContext";
 
 function App() {
-
   const { language } = useContext(LanguageContext);
-  
+
   return (
     <div className="App">
-      
       <div className="app-container">
         <ParticleBackground />
         <div className="app-content">
@@ -33,7 +31,7 @@ function App() {
                   </ProjectsProvider>
                 }
               />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/courses" element={<Courses />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
