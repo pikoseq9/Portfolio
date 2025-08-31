@@ -12,7 +12,7 @@ import { useContext } from "react";
 import { LanguageContext } from "./Context/LanguageContext";
 
 function App() {
-  const { language } = useContext(LanguageContext);
+  const { languageData } = useContext(LanguageContext);
 
   return (
     <div className="App">

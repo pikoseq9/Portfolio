@@ -45,7 +45,6 @@ export default function ParticleBackground() {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log("Particles Loaded:", container);
   };
 
   const options = useMemo(

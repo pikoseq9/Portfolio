@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import LinkCard from "../components/LinkCard";
 import ProfileCard from "../components/ProfileCard";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function About() {
+  const { languageData } = useContext(LanguageContext);
   const profile = {
     name: "Patryk",
     surname: "W",

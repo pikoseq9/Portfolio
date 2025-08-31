@@ -1,1 +1,37 @@
-{}
+{
+    "languages": {
+        "polish": "Polski",
+        "english": "Angielski"
+    },
+
+    "profile_card": {
+        "age": "Wiek",
+        "bio": "Ciągle studiuję na Politechnice Śląskiej – Informatyka na Wydziale Matematyki Stosowanej. Obecnie zagłębiam się w front-end development z wykorzystaniem React, ale mam na koncie również projekty od systemu zarządzania szkołą na komputerach stacjonarnych po skrypty Bash do konfiguracji serwera TFTP do uruchamiania obrazu ISO Ubuntu. Znam technologie takie jak JavaScript, C#, C++, Python i SQL. Obecnie aspiruję do odbycia stażu jako front-end developer, aby rozwijać się jako programista.",
+        "hobbies": "Zainteresowania",
+        "hobby1": "Granie na gitarze",
+        "hobby2": "Programowanie",
+        "hobby3": "Granie w gry komputerowe",
+        "hobby4": "Siłownia"
+    },
+
+    "projects_page": {
+        "loading": "Ładowanie projektów",
+        "repository": "Repozytorium Github"
+    },
+
+    "contact_page": {
+        "header": "Kontakt do mnie",
+        "Email": {
+            "description": "Mój adres email to: wekpat@wp.pl"
+        },
+        "LinkedIn": {
+            "description": "Mój profil LinkedIn jest zawarty w sekcji <b>O mnie</b>."
+        }
+    },
+
+    "links": {
+        "projects": "Projekty",
+        "contact": "Kontakt",
+        "blog": "Blog"
+    }
+}

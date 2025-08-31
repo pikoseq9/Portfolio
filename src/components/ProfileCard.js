@@ -1,33 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import HobbyCard from "./HobbyCard";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function ProfileCard({ profile }) {
   const [age, setAge] = useState(0);
-
-  const getSocialIcon = (url) => {
-    if (url.includes("github.com")) return <FaGithub />;
-    if (url.includes("linkedin.com")) return <FaLinkedin />;
-    if (url.includes("facebook.com")) return <FaFacebook />;
-    return null;
-  };
-
-  const getEmojiForHobby = (hobby) => {
-    switch (hobby) {
-      case "Playing Guitar":
-        return "🎸";
-      case "Programming":
-        return "💻";
-      case "Playing Computer Games":
-        return "🎮";
-      case "Working out":
-        return "⚽";
-      default:
-        return "⭐";
-    }
-  };
+  const {languageData} = useContext(LanguageContext);
 
   useEffect(() => {
+    console.log(languageData);
     calculateAge(profile.dateOfBirth);
   }, []);
 
@@ -38,6 +19,28 @@ export default function ProfileCard({ profile }) {
     setAge(yearDiff);
   }
 
+  const getSocialIcon = (url) => {
+    if (url.includes("github.com")) return <FaGithub />;
+    if (url.includes("linkedin.com")) return <FaLinkedin />;
+    if (url.includes("facebook.com")) return <FaFacebook />;
+    return null;
+  };
+
+  const getEmojiForHobby = (hobby) => {
+    switch (hobby) {
+      case "hobby1":
+        return "🎸";
+      case "hobby2":
+        return "💻";
+      case "hobby3":
+        return "🎮";
+      case "hobby4":
+        return "⚽";
+      default:
+        return "⭐";
+    }
+  };
+
   return (
     <div className="profile-card">
       <div className="profile-card-head">
@@ -45,7 +48,7 @@ export default function ProfileCard({ profile }) {
           <h1>
             {profile.name} {profile.surname}
           </h1>
-          <h2>Age: {age}</h2>
+          <h2>{languageData.profile_card.age}: {age}</h2>
         </div>
         <img src={profile.image} alt={`${profile.name} ${profile.surname}`} />
       </div>
@@ -59,20 +62,15 @@ export default function ProfileCard({ profile }) {
         ))}
       </ul>
       <p>
-        Still studying at {profile.school}. Currently exploring frontend
-        development with React, but I’ve also built projects ranging from a
-        desktop school management system to Bash scripts for setting up a TFTP
-        server to boot a Ubuntu ISO. I’m familiar with technologies such as
-        JavaScript, C#, C++, Python, and SQL. Currently, I’m aspiring to secure
-        a frontend developer internship to further grow as a software developer.
+        {languageData.profile_card.bio}
       </p>
-      <h2>Hobbies</h2>
+      <h2>{languageData.profile_card.hobbies}</h2>
       <div className="hobby-container">
-        {profile.hobbies.map((hobby) => (
-          <HobbyCard
-            key={hobby}
-            hobby={hobby}
-            emoji={getEmojiForHobby(hobby)}
+        {["hobby1","hobby2","hobby3","hobby4"].map((key) => (
+          <HobbyCard 
+            key={key} 
+            hobby={languageData.profile_card?.[key]} 
+            emoji={getEmojiForHobby(key)} 
           />
         ))}
       </div>

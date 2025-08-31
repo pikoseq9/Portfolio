@@ -1,5 +1,6 @@
 import React from "react";
 import ContactCard from "../components/ContactCard";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function Contact() {
   const contactType = {
