@@ -275,6 +275,10 @@ body {
   gap: 1rem;
 }
 
+.link-card-container a {
+  text-decoration: none;
+}
+
 .link-card {
   flex: 1;
   background-color: var(--card);
