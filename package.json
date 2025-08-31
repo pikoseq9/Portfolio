@@ -5,8 +5,8 @@
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "@theme-toggles/react": "^4.1.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
