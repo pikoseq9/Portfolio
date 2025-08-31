@@ -9,7 +9,7 @@ export default function About() {
     name: "Patryk",
     surname: "W",
     dateOfBirth: new Date("2004-11-22"),
-    image: "/images/profile.png",
+    image: "/images/profile.jpg",
     school:
       "Silesian University of Technology - Computer Sciense at the Faculty of Applied Mathematics",
     hobbies: [
